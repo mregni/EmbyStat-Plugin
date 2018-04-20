@@ -25,7 +25,11 @@ namespace Plugin
         {
             return new[]
             {
-                new PluginPageInfo() 
+                new PluginPageInfo
+                {
+                    Name = "SettingsPage",
+                    EmbeddedResourcePath = GetType().Namespace + ".Pages.settings.html"
+                }
             };
         }
     }

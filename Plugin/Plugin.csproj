@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Pages\settings.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Pages\settings.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediaBrowser.Server.Core" Version="3.3.29" />
+  </ItemGroup>
+
 </Project>

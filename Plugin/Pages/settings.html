@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Statistics</title>
+</head>
+<body>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<div data-role="page" class="page type-interior pluginConfigurationPage statisticsConfigurationPage" data-require="emby-button,emby-select">
+	<div data-role="content">
+		<div class="content-primary">
+			<h1>EmbyStat plugin</h1>
+			<p id="statsIntro">
+				This plugin will calculate overall and userbased statistics from this Emby server instance. Keep in mind that viewing an item multiple times will not increase the "watched" count. It will only count as 1. Last statistics finished at
+			</p>
+		</div>
+	</div>
+
+	<style>
+     
+		</style>
+	<!-- ReSharper disable once PossiblyUnassignedProperty -->
+	<script type="text/javascript">
+
+		(function () {
+			var Settings = {
+				pluginId: 'ffa904b3-7bb1-4c23-ad5c-10a8c0f8b441',
+				createStat: function (v) {
+
+				}
+			};
+
+			$('.statisticsConfigurationPage').on('pageinit', function (e) {
+				var page = this;
+			});
+		})();
+	</script>
+</div>
+</body>
+</html>
