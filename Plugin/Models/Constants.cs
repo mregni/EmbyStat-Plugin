@@ -1,0 +1,105 @@
+﻿namespace Plugin.Models
+{
+    public static class Constants
+    {
+        public static class Movies
+        {
+            public static string TotalMovies => "MOVIES.TOTALMOVIES";
+            public static string LowestRated => "MOVIES.LOWESTRATED";
+            public static string HighestRated => "MOVIES.HIGHESTRATED";
+            public static string OldestPremiered => "MOVIES.OLDESTPREMIERED";
+            public static string NewestPremiered => "MOVIES.NEWESTPREMIERED";
+            public static string Shortest => "MOVIES.SHORTEST";
+            public static string Longest => "MOVIES.LONGEST";
+            public static string LatestAdded => "MOVIES.LATESTADDED";
+            public static string TotalPlayLength => "MOVIES.TOTALPLAYLENGTH";
+        }
+
+        public static class Icons
+        {
+            public static string TheatersRoundedIcon => "TheatersRoundedIcon";
+            public static string StorageRoundedIcon => "StorageRoundedIcon";
+            public static string QueryBuilderRoundedIcon => "QueryBuilderRoundedIcon";
+            public static string PoundRoundedIcon => "PoundRoundedIcon";
+            public static string PeopleAltRoundedIcon => "PeopleAltRoundedIcon";
+        }
+
+        public static class Common
+        {
+            public static string TotalActors => "COMMON.TOTALACTORS";
+            public static string TotalDirectors => "COMMON.TOTALDIRECTORS";
+            public static string TotalWriters => "COMMON.TOTALWRITERS";
+            public static string MostFeaturedActor => "COMMON.MOSTFEATUREDACTOR";
+            public static string MostFeaturedDirector => "COMMON.MOSTFEATUREDDIRECTOR";
+            public static string MostFeaturedWriter => "COMMON.MOSTFEATUREDWRITER";
+            public static string TotalDiskSize => "COMMON.TOTALDISKSIZE";
+            public static string TotalGenres => "COMMON.TOTALGENRES";
+        }
+
+        public static class Shows
+        {
+            public static string TotalShows => "SHOWS.TOTALSHOWS";
+            public static string TotalEpisodes => "SHOWS.TOTALEPISODES";
+            public static string TotalMissingEpisodes => "SHOWS.TOTALMISSINGEPISODES";
+            public static string TotalPlayLength => "SHOWS.TOTALPLAYLENGTH";
+            public static string HighestRatedShow => "SHOWS.HIGHESTRATEDSHOW";
+            public static string LowestRatedShow => "SHOWS.LOWESTRATEDSHOW";
+            public static string OldestPremiered => "SHOWS.OLDESTPREMIERED";
+            public static string NewestPremiered => "SHOWS.NEWESTPREMIERED";
+            public static string LatestAdded => "SHOWS.LATESTADDED";
+            public static string MostEpisodes => "SHOWS.WITHMOESTEPISODES";
+            public static string ShowStatusChart => "SHOWS.SHOWSTATUSGRAPH";
+        }
+
+        public static class Users
+        {
+            public static string TotalWatchedMovies => "USERS.STATS.TOTALWATCHEDMOVIES";
+            public static string TotalWatchedEpisodes => "USERS.STATS.TOTALWATCHEDEPISODES";
+        }
+
+        public static class Tvdb
+        {
+            public static string BaseUrl => "https://api.thetvdb.com";
+            public static string SerieEpisodesUrl => "/series/{0}/episodes?page={1}";
+            public static string UpdatesUrl => "/updated/query?fromTime={0}&toTime={1}";
+            public static string LoginUrl => "/login";
+        }
+
+        public static class Type
+        {
+            public static string Movie => "Movie";
+            public static string Boxset => "BoxSet";
+        }
+
+        public static class LogPrefix
+        {
+            public static string MediaSyncJob => "MEDIA-SYNC";
+            public static string CheckUpdateJob => "UPDATE-CHECKER";
+            public static string PingMediaServerJob => "PING";
+            public static string SmallMediaServerSyncJob => "SYSTEM-SYNC";
+            public static string System => "SYSTEM";
+            public static string DatabaseCleanupJob => "DATABASE-CLEANUP";
+        }
+
+        //CHARTS
+        public static string CountPerGenre => "COMMON.GENRES";
+        public static string CountPerCommunityRating => "COMMON.COMMUNITYRATING";
+        public static string CountPerPremiereYear => "COMMON.PREMIEREDATE";
+        public static string CountPerCollectedPercentage => "COMMON.COLLECTEDPERCENTAGE";
+        public static string CountPerOfficialRating => "COMMON.OFFICIALRATING";
+
+        //COMMON
+        public static string Unknown => "UNKNOWN";
+
+        //QUALITIES
+        public static string FourK => "4K";
+        public static string Qhd => "1440P";
+        public static string FullHd => "1080P";
+        public static string HdReady => "720P";
+        public static string FourHunderdEighty => "480P";
+        public static string Dvd => "< 480P";
+
+        //DUPLICATE REASONS
+        public static string ByImdb => "BYIMDB";
+    }
+}
